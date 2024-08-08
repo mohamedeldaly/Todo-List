@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div><canvas width="40" height="40"></canvas></div>
+            <div class="button-div"><button id="showDialog1">&plus;</button><span>NEW PROJECT</span></div>
+            <div class="button-div"><button id="showDialog2">&plus;</button><span>NEW TODO</span></div>
+            <h1>Projects</h1>
+            <ul>
+                <li>Default Project</li>
+            </ul>
+            <ul id="projectList">
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="project">
+                <h1>Default Project</h1>
+            </div>
+        </div>
+        <dialog id="addProject">
+            <form id="form">
+                <label for="name"></label>
+                <input id="name2" type="text" placeholder="Task name" required>
+                <hr>
+                <button type="submit">Add project</button>
+            </form>
+        </dialog>
+        <dialog id="favDialog">
+            <form id="form1">
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="Task name" required>
+                <label for="title"></label>
+                <textarea name="title" id="title" placeholder="Task description" required></textarea>
+                <label for="date"></label>
+                <input id="date" type="date" required>
+                <label for="priority"></label>
+                <select name="priority" id="priority" required>
+                    <option value="" selected disabled>Priority</option>
+                    <option value="Priority 1">Priority 1</option> 
+                    <option value="Priority 2">Priority 2</option> 
+                    <option value="Priority 3">Priority 3</option> 
+                    <option value="Priority 4">Priority 4</option> 
+                </select>
+                <select name="project" id="projects" required>
+                    <option value="Default Project">Default Project</option>
+                </select>
+                <hr>
+                <button type="submit">Add todo</button>
+            </form>
+        </dialog>
+        <dialog id="favDialogEdit">
+            <form id="form2">
+                <label for="name"></label>
+                <input id="name1" type="text" placeholder="Task name" required>
+                <label for="title"></label>
+                <textarea name="title" id="title1" placeholder="Task description" required></textarea>
+                <label for="date"></label>
+                <input id="date1" type="date" required>
+                <label for="priority"></label>
+                <select name="priority" id="priority1" required>
+                    <option value="" selected disabled>Priority</option>
+                    <option value="Priority 1">Priority 1</option> 
+                    <option value="Priority 2">Priority 2</option> 
+                    <option value="Priority 3">Priority 3</option> 
+                    <option value="Priority 4">Priority 4</option> 
+                </select>
+                <select name="project" id="projects1" required>
+                    <option value="Default Project">Default Project</option>
+                </select>
+                <hr>
+                <div>
+                <button type="submit">Edit todo</button>
+                <button type="button" id="delete">Delete</button>
+            </div>
+            </form>
+        </dialog>
+    </div>
+<script defer src="main.js"></script></body>
+</html>
